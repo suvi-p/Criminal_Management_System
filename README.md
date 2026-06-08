@@ -25,16 +25,16 @@ The **Criminal Management System** is a frontend web application designed for la
 
 ## Features
 
-- 🔐 **Secure Login** — Police station-based login with email, password, and OTP verification
-- 🏠 **Dashboard** — Overview of total criminals, cases, officers, and recent activities
-- 👤 **Manage Criminals** — Register, view, edit, and delete criminal profiles
-- 📁 **Manage Cases** — Add, update, and track criminal cases
-- 👮 **Manage Officers** — Add and manage officer records
-- 🔍 **Criminal Detection** — Live fingerprint scanning and match identification
-- ⚙️ **Settings** — User account and system preferences
-- ❓ **Help & Support** — In-app support section
-- 🔑 **Forgot Password** — Password recovery flow
-- 📝 **Sign Up** — New officer registration
+-  **Secure Login** — Police station-based login with email, password, and OTP verification
+-  **Dashboard** — Overview of total criminals, cases, officers, and recent activities
+-  **Manage Criminals** — Register, view, edit, and delete criminal profiles
+-  **Manage Cases** — Add, update, and track criminal cases
+-  **Manage Officers** — Add and manage officer records
+-  **Criminal Detection** — Live fingerprint scanning and match identification
+-  **Settings** — User account and system preferences
+-  **Help & Support** — In-app support section
+-  **Forgot Password** — Password recovery flow
+-  **Sign Up** — New officer registration
 
 ---
 
@@ -169,6 +169,4 @@ Contributions are welcome!
 
 ---
 
-
-This project is open-source and available under the [MIT License](LICENSE).
 
