@@ -4,7 +4,7 @@ A web-based criminal database management system built for police departments to 
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -142,9 +142,6 @@ start login.html
 ```
 
 > **Tip:** Use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code for the best experience.
-
----
-
 
 ---
 
