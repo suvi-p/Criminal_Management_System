@@ -12,7 +12,6 @@ A web-based criminal database management system built for police departments to 
 - [Repository Structure](#repository-structure)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 
 
@@ -146,9 +145,6 @@ start login.html
 
 ---
 
-## Screenshots
-
-> _Add screenshots of the Dashboard, Manage Criminals, and Detection pages here._
 
 ---
 
