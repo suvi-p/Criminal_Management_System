@@ -1,0 +1,253 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #003366;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    padding: 16px 24px;
+    text-align: left;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sidebar a:hover {
+    background-color: #004080;
+}
+.sidebar .icon {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Content area styles */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 80px); /* Subtract footer height from viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    transition: margin-left 0.3s ease;
+    position: relative; /* Ensure content can be positioned relative to body */
+    z-index: 0; /* Ensure content is behind the footer */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #003366;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header h1 {
+    font-size: 2em;
+    color: white;
+    padding: 20px;
+}
+.header .profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.header .profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .profile .dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 180px;
+    border-radius: 5px;
+    z-index: 3;
+}
+.header .profile .dropdown a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.header .profile .dropdown a:hover {
+    background-color: #f0f0f0;
+}
+.header .profile:hover .dropdown {
+    display: block;
+}
+
+/* Help section styles */
+.help-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.help-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* FAQ styles */
+.faq {
+    margin-top: 20px;
+}
+.question {
+    margin-bottom: 20px;
+    cursor: pointer; /* Cursor pointer for clickable questions */
+}
+.question h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.question p {
+    display: none; /* Hide answers by default */
+    font-size: 1.1em;
+    color: #666;
+}
+.question.active p {
+    display: block; /* Show answer when question is clicked */
+}
+
+/* Contact section styles */
+.contact-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.contact-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.contact-info {
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    position: sticky;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px; /* Reduced max-width */
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.1em; /* Slightly larger font size */
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #c0c0c0; /* Lighter grey for links */
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.social-icons a {
+    margin: 0 6px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.legal {
+    margin-top: 10px; /* Reduced margin */
+    font-size: 0.8em;
+    color: #999999;
+}
+
+.legal a {
+    color: #999999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.legal a:hover {
+    color: #ffffff; /* White on hover */
+}

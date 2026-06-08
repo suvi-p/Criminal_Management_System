@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Code Confirmation</title>
+   <link rel="stylesheet" href="2fa.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+    </div>
+
+    <div class="container">
+        <div class="police-logo">
+            <img src="images/logo2x.png" alt="Police Logo">
+        </div>
+        <form class="verification-form">
+            <div class="form-group">
+                <label for="otp">Enter 2FA Code:</label>
+                <input type="text" id="otp" name="otp" required>
+            </div>
+            <button type="submit">Verify Code</button>
+        </form>
+        <div class="form-footer">
+            <p><a href="#">Resend Code</a></p>
+            <p>Return to <a href="login.html">Login Page</a></p>
+        </div>
+    </div>
+</body>
+</html>

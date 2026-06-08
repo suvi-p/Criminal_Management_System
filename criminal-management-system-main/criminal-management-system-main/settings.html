@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Criminal Management System</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Criminal Management</h2>
+        <a href="dashboard.html">
+            <img class="icon" src="images/icons8-dashboard-24.png" alt="Dashboard Icon">Dashboard
+        </a>
+        <a href="managecrim.html">
+            <img class="icon" src="images/icons8-criminal-64.png" alt="Manage Criminals Icon">Manage Criminals
+        </a>
+        <a href="managecase.html">
+            <img class="icon" src="images/icons8-crime-file-64.png" alt="Manage Cases Icon">Manage Cases
+        </a>
+        <a href="manageofficer.html">
+            <img class="icon" src="images/icons8-police-64.png" alt="View Officers Icon">Manage Officers
+        </a>
+        <a href="detection.html">
+            <img class="icon" src="images/icons8-fingerprint-scan-50.png" alt="Generate Reports Icon">Criminal Detection
+        </a>
+        <a href="#">
+            <img class="icon" src="images/icons8-settings-50.png" alt="Settings Icon">Settings
+        </a>
+        <a href="help.html">
+            <img class="icon" src="images/icons8-help-50.png" alt="Help Icon">Help & Support
+        </a>
+        <a href="aboutus.html">
+            <img class="icon" src="images/icons8-about-us-50.png" alt="About Us Icon">About Us
+        </a>
+        <div style="flex: 1;"></div>
+    </div>
+    <div class="content">
+        <header class="dashboard-header">
+            <h1>Settings</h1>
+            <a href="dashboard.html" class="back-link">
+                <img src="images/icons8-back-100.png" alt="Back Icon">
+            </a>
+        </header>
+        <div class="settings-section">
+            <h2>User Preferences</h2>
+            <div class="setting">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="language">Select Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+        </div>
+        <div class="settings-section">
+            <h2>Email Notifications</h2>
+            <div class="setting">
+                <label for="emailNotifications">Receive Email Notifications:</label>
+                <input type="checkbox" id="emailNotifications">
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@criminalmanagement.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/icons8-facebook-50.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/icons8-twitter-50.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/icons8-instagram-50.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="legal">
+                <p>&copy; 2024 Criminal Management System. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
